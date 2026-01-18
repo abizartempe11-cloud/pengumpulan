@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Project | Dreamy Ocean</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg,#F0F7FF,#E0EEFF,#C8DFFF);
+      min-height: 100vh;
+    }
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .glass {
+      background: rgba(255,255,255,.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.3);
+    }
+    .glass-strong {
+      background: rgba(255,255,255,.75);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,.4);
+      box-shadow: 0 8px 32px rgba(0,0,0,.1);
+    }
+    .card-hover {
+      transition: .3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(59,124,184,.25);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg,#3B7CB8,#6BA3CE);
+      color: white;
+      padding: .6rem 1.4rem;
+      border-radius: .6rem;
+      font-weight: 600;
+      transition: .3s;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg,#1E4B6E,#3B7CB8);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+<!-- HEADER -->
+<header class="glass sticky top-0 z-50">
+  <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-serif font-bold text-[#1E4B6E]">
+      Karya Kami
+    </h1>
+    <div class="flex gap-6 text-sm">
+      <a href="#team">Tim</a>
+      <a href="#projects">Project</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="py-24 text-center">
+  <h2 class="text-5xl md:text-6xl font-serif font-bold mb-6 text-[#1E4B6E]">
+    Our Project Hub
+  </h2>
+  <p class="text-lg text-gray-600 max-w-xl mx-auto">
+    Kumpulan karya tim kami.  
+    Alhamdulillah, beda rasa, satu tujuan
+	
+  </p>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="py-20">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-serif font-bold text-center mb-12">
+      Tim Kami
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+      <div class="glass-strong p-6 rounded-xl text-center">
+        <h4 class="font-semibold">Siti Lu'luilmaknun</h4>
+        <p class="text-sm text-gray-600">Team Member</p>
+      </div>
+
+      <div class="glass-strong p-6 rounded-xl text-center">
+        <h4 class="font-semibold">Mohammad Abizar Ramadhan</h4>
+        <p class="text-sm text-gray-600">Team Member</p>
+      </div>
+
+      <div class="glass-strong p-6 rounded-xl text-center">
+        <h4 class="font-semibold">M. Nur Afif Ali Maghribi</h4>
+        <p class="text-sm text-gray-600">Team Member</p>
+      </div>
+
+      <div class="glass-strong p-6 rounded-xl text-center">
+        <h4 class="font-semibold">Whyu Ramadani</h4>
+        <p class="text-sm text-gray-600">Team Member</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-serif font-bold text-center mb-12">
+      Project Kami
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+      <a href="https://link-karya-abizar.com" target="_blank"
+         class="glass-strong p-6 rounded-xl text-center card-hover block">
+        <h4 class="font-semibold text-lg mb-2">Abizar</h4>
+        <p class="text-sm text-gray-600 mb-4">Web Designer</p>
+        <span class="btn-primary">Lihat Karya</span>
+      </a>
+
+      <a href="https://link-karya-siti.com" target="_blank"
+         class="glass-strong p-6 rounded-xl text-center card-hover block">
+        <h4 class="font-semibold text-lg mb-2">luil</h4>
+        <p class="text-sm text-gray-600 mb-4">Designer</p>
+        <span class="btn-primary">Lihat Karya</span>
+      </a>
+
+      <a href="https://link-karya-afif.com" target="_blank"
+         class="glass-strong p-6 rounded-xl text-center card-hover block">
+        <h4 class="font-semibold text-lg mb-2">Afif</h4>
+        <p class="text-sm text-gray-600 mb-4">Company Profile</p>
+        <span class="btn-primary">Lihat Karya</span>
+      </a>
+
+      <a href="https://link-karya-wahyu.com" target="_blank"
+         class="glass-strong p-6 rounded-xl text-center card-hover block">
+        <h4 class="font-semibold text-lg mb-2">Wahyu</h4>
+        <p class="text-sm text-gray-600 mb-4">Creative Web</p>
+        <span class="btn-primary">Lihat Karya</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="glass mt-20 py-8 text-center text-sm text-gray-600">
+  © UKK Kelompok 9 — 2026
+</footer>
+
+</body>
+</html>
